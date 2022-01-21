@@ -20,4 +20,9 @@ export class ApiServices {
     const res = await userRequest.post('/orders', body);
     return res;
   }
+
+  async login(user) {
+    const res = await publicRequest.post('/auth/login', user);
+    return res;
+  }
 }

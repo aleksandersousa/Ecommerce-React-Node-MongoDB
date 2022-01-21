@@ -47,8 +47,17 @@ export const Button = styled.button`
   padding: 15px 20px;
   background-color: teal;
   color: white;
-  cursor: pointer;
   margin-bottom: 10px;
+  cursor: pointer;
+  
+  &:disabled{
+    color: #b3adad;
+    cursor: not-allowed;
+  }
+`;
+
+export const Error = styled.span`
+  color: red;
 `;
 
 export const Link = styled.a`
