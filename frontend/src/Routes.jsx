@@ -7,6 +7,7 @@ import Login from './pages/login/Login';
 import ProductList from './pages/productList/ProductList';
 import Product from './pages/product/Product';
 import Cart from './pages/cart/Cart';
+import Success from './pages/success/Success';
 
 export default function RoutesLogic() {
   const user = true;
@@ -19,6 +20,7 @@ export default function RoutesLogic() {
         <Route exact path="/products/:category" element={<ProductList />} />
         <Route exact path="/product/:id" element={<Product />} />
         <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/success" element={<Success />} />
       </Routes>
     </Router>
   );

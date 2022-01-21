@@ -10,4 +10,14 @@ export class ApiServices {
     const res = await publicRequest.get(`/products/${id}`);
     return res;
   }
+
+  async performPayment(body) {
+    const res = await userRequest.post('/checkout/payment', body);
+    return res;
+  }
+
+  async createOrder(body) {
+    const res = await userRequest.post('/orders', body);
+    return res;
+  }
 }

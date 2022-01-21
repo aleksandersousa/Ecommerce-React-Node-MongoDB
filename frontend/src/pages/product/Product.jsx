@@ -46,10 +46,6 @@ export default function Product() {
     });
   }, [id]);
 
-  useEffect(() => {
-    console.log(size);
-  }, [size]);
-
   const handleQuantity = (type) => {
     if (type === 'inc') {
       setQuantity(quantity + 1);
