@@ -1,0 +1,25 @@
+import {
+  BrowserRouter as Router, Routes, Route, Navigate, 
+} from 'react-router-dom';
+import Home from './pages/home/Home';
+import Register from './pages/register/Register';
+import Login from './pages/login/Login';
+import ProductList from './pages/productList/ProductList';
+import Product from './pages/product/Product';
+import Cart from './pages/cart/Cart';
+
+export default function RoutesLogic() {
+  const user = true;
+  return (
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/register" element={user ? <Navigate to="/" /> : <Register />} />
+        <Route exact path="/login" element={user ? <Navigate to="/" /> : <Login />} />
+        <Route exact path="/products/:category" element={<ProductList />} />
+        <Route exact path="/product/:id" element={<Product />} />
+        <Route exact path="/cart" element={<Cart />} />
+      </Routes>
+    </Router>
+  );
+}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Badge } from '@material-ui/core';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import {
@@ -24,7 +25,11 @@ export default function Navbar() {
             <Search style={{ color: 'gray', fontSize: 16 }} />
           </SearchContainer>
         </Left>
-        <Center><Logo>E-COMMERCE</Logo></Center>
+        <Center>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Logo>E-COMMERCE</Logo>
+          </Link>
+        </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>

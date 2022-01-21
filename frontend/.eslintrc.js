@@ -54,6 +54,9 @@ module.exports = {
     'no-plusplus': 'off',
     'no-console': 'off',
     'no-undef': 'off',
+    'no-underscore-dangle': 'off',
+    'no-unused-expressions': 'off',
+    'no-unused-vars': 'warn',
     'no-redeclare': 'off',
     'no-useless-return': 'off',
     'no-trailing-spaces': 'off',
@@ -67,5 +70,6 @@ module.exports = {
     'click-events-have-key-events': 'off',
     'max-len': 'off',
     'arrow-body-style': 'off',
+    'class-methods-use-this': 'off',
   },
 };

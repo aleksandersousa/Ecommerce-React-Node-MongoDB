@@ -46,6 +46,8 @@ export const Center = styled.div`
 
 export const Logo = styled.h1`
   font-weight: bold;
+  color: black;
+  cursor: pointer;
   ${mobile({ fontSize: '24px' })}
 `;
 export const Right = styled.div`
