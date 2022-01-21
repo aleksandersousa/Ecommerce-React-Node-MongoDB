@@ -61,6 +61,7 @@ module.exports = {
     'no-useless-return': 'off',
     'no-trailing-spaces': 'off',
     'no-use-before-define': 'off',
+    'no-param-reassign': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'error',

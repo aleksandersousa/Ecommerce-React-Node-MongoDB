@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { Add, Remove } from '@material-ui/icons';
 import {
@@ -26,15 +27,17 @@ import Announcement from '../../components/announcement/Announcement';
 import Newsletter from '../../components/newsletter/Newsletter';
 import Footer from '../../components/footer/Footer';
 import { ApiServices } from '../../services/apiServices';
+import { addProduct } from '../../redux/cartRedux';
 
 export default function Product() {
   const annoucementText = 'Super Deal! Free Shipping on Orders Over $50';
   const location = useLocation();
   const id = location.pathname.split('/')[2];
   const [product, setProduct] = useState({});
-  const [color, setColor] = useState('');
-  const [size, setSize] = useState('');
+  const [color, setColor] = useState(null);
+  const [size, setSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const apiServices = new ApiServices();
@@ -42,6 +45,10 @@ export default function Product() {
       setProduct(res.data);
     });
   }, [id]);
+
+  useEffect(() => {
+    console.log(size);
+  }, [size]);
 
   const handleQuantity = (type) => {
     if (type === 'inc') {
@@ -51,7 +58,11 @@ export default function Product() {
     }
   };
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    dispatch(addProduct({
+      ...product, quantity, color, size, 
+    }));
+  };
 
   return (
     <Container>
