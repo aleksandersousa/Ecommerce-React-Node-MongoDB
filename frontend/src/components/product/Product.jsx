@@ -5,9 +5,6 @@ import {
 } from './Styles';
 
 export default function Product({ item }) {
-  const location = useLocation();
-  const category = location.pathname.split('/')[2];
-  
   return (
     <Container>
       <Circle />

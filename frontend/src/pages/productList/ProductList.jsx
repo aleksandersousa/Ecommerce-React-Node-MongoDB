@@ -36,7 +36,7 @@ export default function ProductList() {
             <Option disabled>
               Color
             </Option>
-            <Option>white</Option>
+            <Option>gray</Option>
             <Option>black</Option>
             <Option>red</Option>
             <Option>blue</Option>

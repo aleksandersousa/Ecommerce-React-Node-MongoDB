@@ -63,7 +63,7 @@ module.exports = {
     'no-use-before-define': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/prefer-default-export': 'off',
-    'import/no-unresolved': 'off',
+    'import/no-unresolved': 'error',
     'import/extensions': 'off',
     'import/named': 'off',
     'implicit-arrow-linebreak': 'off',
