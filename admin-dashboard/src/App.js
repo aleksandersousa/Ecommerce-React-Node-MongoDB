@@ -1,6 +1,7 @@
 import './App.scss';
 import Topbar from './components/topbar/Topbar';
-import Sidebar from './sidebar/Sidebar';
+import Sidebar from './components/sidebar/Sidebar';
+import RoutesLogic from './Routes';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Topbar />
       <div className="container">
         <Sidebar />
+        <RoutesLogic />
       </div>
     </div>
   );
