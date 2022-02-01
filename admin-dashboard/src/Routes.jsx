@@ -5,6 +5,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import UserList from './pages/userList/UserList';
 import User from './pages/user/User';
 import NewUser from './pages/newUser/NewUser';
+import ProductList from './pages/productList/ProductList';
 
 export default function RoutesLogic() {
   return (
@@ -17,6 +18,7 @@ export default function RoutesLogic() {
           <Route exact path="/users" element={<UserList />} />
           <Route exact path="/user/:userId" element={<User />} />
           <Route exact path="/newUser" element={<NewUser />} />
+          <Route exact path="/products" element={<ProductList />} />
         </Routes>
       </div>
     </Router>
