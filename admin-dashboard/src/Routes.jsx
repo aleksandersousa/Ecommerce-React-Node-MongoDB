@@ -6,6 +6,7 @@ import UserList from './pages/userList/UserList';
 import User from './pages/user/User';
 import NewUser from './pages/newUser/NewUser';
 import ProductList from './pages/productList/ProductList';
+import Product from './pages/product/Product';
 
 export default function RoutesLogic() {
   return (
@@ -19,6 +20,7 @@ export default function RoutesLogic() {
           <Route exact path="/user/:userId" element={<User />} />
           <Route exact path="/newUser" element={<NewUser />} />
           <Route exact path="/products" element={<ProductList />} />
+          <Route exact path="/product/:productId" element={<Product />} />
         </Routes>
       </div>
     </Router>
