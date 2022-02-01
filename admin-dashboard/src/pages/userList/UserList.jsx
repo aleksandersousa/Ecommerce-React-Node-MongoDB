@@ -42,7 +42,7 @@ export default function UserList() {
       width: 150,
       renderCell: (params) => (
         <>
-          <Link to={`/user/${params.row.id}`}>
+          <Link to={`/user/${params.row.id}`} className="link">
             <button type="button" className="userListEdit">Edit</button>
           </Link>
           <DeleteOutline
