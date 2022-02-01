@@ -25,4 +25,14 @@ export class ApiServices {
     const res = await publicRequest.post('/auth/login', user);
     return res;
   }
+
+  async getUsers() {
+    const res = await userRequest.get('/users/?new=true');
+    return res;
+  }
+
+  async getOrders() {
+    const res = await userRequest.get('/orders');
+    return res;
+  }
 }

@@ -35,7 +35,9 @@ module.exports = {
     'no-unused-vars': 'warn',
     'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
     'no-param-reassign': 'off',
+    'no-underscore-dangle': 'off',
     'class-methods-use-this': 'off',
+    'no-console': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
