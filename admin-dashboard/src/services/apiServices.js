@@ -11,6 +11,11 @@ export class ApiServices {
     return res;
   }
 
+  async deleteProduct(id) {
+    const res = await userRequest.delete(`/products/${id}`);
+    return res;
+  }
+
   async performPayment(body) {
     const res = await userRequest.post('/checkout/payment', body);
     return res;
@@ -21,6 +26,11 @@ export class ApiServices {
     return res;
   }
 
+  async getOrders() {
+    const res = await userRequest.get('/orders');
+    return res;
+  }
+
   async login(user) {
     const res = await publicRequest.post('/auth/login', user);
     return res;
@@ -28,11 +38,6 @@ export class ApiServices {
 
   async getUsers() {
     const res = await userRequest.get('/users/?new=true');
-    return res;
-  }
-
-  async getOrders() {
-    const res = await userRequest.get('/orders');
     return res;
   }
 }
