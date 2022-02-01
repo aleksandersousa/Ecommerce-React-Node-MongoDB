@@ -16,6 +16,16 @@ export class ApiServices {
     return res;
   }
 
+  async updateProduct(id, body) {
+    const res = await userRequest.put(`/products/${id}`, body);
+    return res;
+  }
+
+  async addProduct(body) {
+    const res = await userRequest.post('/products', body);
+    return res;
+  }
+
   async performPayment(body) {
     const res = await userRequest.post('/checkout/payment', body);
     return res;
