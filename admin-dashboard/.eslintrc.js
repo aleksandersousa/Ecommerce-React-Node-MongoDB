@@ -34,6 +34,8 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'warn',
     'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
+    'no-param-reassign': 'off',
+    'class-methods-use-this': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'warn',
