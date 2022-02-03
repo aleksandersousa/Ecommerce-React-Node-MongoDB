@@ -25,14 +25,14 @@ Using Node.js and MongoDB Cloud to create an RESTful API, and React.js to create
 
 ### admin dashboard
 
-![Alt text](https://i.ibb.co/gMJqY4f/admin-first.png "home page")
-![Alt text](https://i.ibb.co/K6y5q99/admin-last.png "home page 2")
-![Alt text](https://i.ibb.co/cTFVxtK/admin-products.png "products page")
-![Alt text](https://i.ibb.co/m5hy2Tf/admin-edit-product.png "product page")
-![Alt text](https://i.ibb.co/qF4cLbX/admin-add-product.png "add product page")
-![Alt text](https://i.ibb.co/4SyLKxb/admin-users.png "users page")
-![Alt text](https://i.ibb.co/px6YT8r/admin-edit-user.png "user page")
-![Alt text](https://i.ibb.co/7bndHTr/admin-add-user.png "add user page")
+![home page](https://i.ibb.co/gMJqY4f/admin-first.png "home page")
+![home page 2](https://i.ibb.co/K6y5q99/admin-last.png "home page 2")
+![products page](https://i.ibb.co/cTFVxtK/admin-products.png "products page")
+![product page](https://i.ibb.co/m5hy2Tf/admin-edit-product.png "product page")
+![add product page](https://i.ibb.co/qF4cLbX/admin-add-product.png "add product page")
+![users page](https://i.ibb.co/4SyLKxb/admin-users.png "users page")
+![user page](https://i.ibb.co/px6YT8r/admin-edit-user.png "user page")
+![add user page](https://i.ibb.co/7bndHTr/admin-add-user.png "add user page")
 
 ### ecommerce
 
