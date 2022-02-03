@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import {
   Container, Filter, FilterContainer, FilterText, Option, Select, Title, 
@@ -15,6 +15,10 @@ export default function ProductList() {
   const [filters, setFilters] = useState({});
   const [sort, setSort] = useState('newest');
   const category = location.pathname.split('/')[2];
+
+  useEffect(() => {
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
 
   const handleFilters = (e) => {
     const { value } = e.target;

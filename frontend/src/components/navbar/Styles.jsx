@@ -36,6 +36,9 @@ export const SearchContainer = styled.div`
 
 export const Input = styled.input`
   border: none;
+  &:focus {
+    outline: none;
+  }
   ${mobile({ width: '50px' })}
 `;
 

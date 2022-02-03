@@ -56,7 +56,8 @@ export default function Cart() {
       const data = { tokenId: stripeToken.id, amount: cart.total * 100 };
   
       apiServices.performPayment(data).then((res) => {
-        navigate('/success', { state: { stripeData: res.data, products: cart } });
+        // navigate('/success', { state: { stripeData: res.data, products: cart } });
+        console.log('success');
       });
     }
   }, [stripeToken, cart.total, navigate, cart]);

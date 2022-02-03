@@ -40,6 +40,10 @@ export default function Product() {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
+
+  useEffect(() => {
     const apiServices = new ApiServices();
     apiServices.getProduct(id).then((res) => {
       setProduct(res.data);

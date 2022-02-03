@@ -64,7 +64,6 @@ export default function Product() {
               <option value="true">Yes</option>
               <option value="false">No</option>
             </select>
-            <label>Active</label>
           </div>
           <div className="productFormRight">
             <div className="productUpload">

@@ -30,6 +30,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'react/no-unstable-nested-components': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'global-require': 'off',
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'warn',

@@ -1,5 +1,6 @@
 import { Badge } from '@material-ui/core';
 import { Language, NotificationsNone, Settings } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 import './styles.scss';
 
 export default function Topbar() {
@@ -7,7 +8,9 @@ export default function Topbar() {
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span className="logo">admin</span>
+          <Link to="/" className="link">
+            <span className="logo">admin</span>
+          </Link>
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">

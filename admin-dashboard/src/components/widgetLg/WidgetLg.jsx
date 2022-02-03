@@ -5,6 +5,7 @@ import { ApiServices } from '../../services/apiServices';
 
 export default function WidgetLg() {
   const [orders, setOrders] = useState([]);
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     const apiServices = new ApiServices();
@@ -14,6 +15,22 @@ export default function WidgetLg() {
       console.log(err);
     });
   }, []);
+
+  useEffect(() => {
+    if (orders.length !== 0) {
+      const apiServices = new ApiServices();
+      const tempUsers = [];
+      const getUsers = async () => {
+        await Promise.all(orders.map(async (order) => {
+          await apiServices.getUser(order.userId).then((res) => {
+            tempUsers.push(res.data);
+          });
+        }));
+        setUsers(tempUsers);
+      };
+      getUsers();
+    }
+  }, [orders]);
 
   function Button({ type }) {
     return <button type="button" className={`widgetLgButton ${type}`}>{type}</button>;
@@ -30,15 +47,15 @@ export default function WidgetLg() {
             <th className="widgetLgTh">Amount</th>
             <th className="widgetLgTh">Status</th>
           </tr>
-          {orders.map((order) => (
+          {orders.map((order, i) => (
             <tr className="widgetLgTr" key={order._id}>
               <td className="widgetLgUser">
-                {/* <img
-                  src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                <img
+                  src={users[i]?.img || 'https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif'}
                   alt=""
                   className="widgetLgImg"
-                /> */}
-                <span className="widgetLgName">{order.userId}</span>
+                />
+                <span className="widgetLgName">{users[i]?.username}</span>
               </td>
               <td className="widgetLgDate">{format(order.createdAt)}</td>
               <td className="widgetLgAmount">${order.amount}</td>

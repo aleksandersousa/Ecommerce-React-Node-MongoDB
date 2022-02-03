@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { Link, useLocation } from 'react-router-dom';
 import { ApiServices } from '../../services/apiServices';
 import { Button, Container } from './Styles';
 
@@ -33,7 +34,9 @@ export default function Success() {
       {orderId
         ? `Order has been created successfully. Your order number is ${orderId}`
         : 'Successfull. Your order is being prepared...'}
-      <Button>Go to Homepage</Button>
+      <Link to="/">
+        <Button>Go to Homepage</Button>
+      </Link>
     </Container>
   );
 }

@@ -34,9 +34,13 @@ export default function Navbar() {
           </Link>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
-          <Link to="/cart" style={{ color: 'black' }}>
+          <Link to="/register" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <MenuItem>REGISTER</MenuItem>
+          </Link>
+          <Link to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <MenuItem>SIGN IN</MenuItem>
+          </Link>
+          <Link to="/cart" style={{ color: 'inherit' }}>
             <MenuItem>
               <Badge badgeContent={quantity} color="primary">
                 <ShoppingCartOutlined />

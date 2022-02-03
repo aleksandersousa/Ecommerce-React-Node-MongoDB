@@ -50,4 +50,9 @@ export class ApiServices {
     const res = await userRequest.get('/users/?new=true');
     return res;
   }
+
+  async getUser(id) {
+    const res = await userRequest.get(`/users/${id}`);
+    return res;
+  }
 }
