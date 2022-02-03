@@ -18,9 +18,9 @@ export const Info = styled.div`
 
 export const Container = styled.div`
   flex: 1;
-  margin: 5px;
-  min-width: 280px;
-  height: 350px;
+  margin: .3125rem;
+  min-width: 17.5rem;
+  height: 21.875rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,8 +33,8 @@ export const Container = styled.div`
 `;
 
 export const Circle = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   border-radius: 50%;
   background-color: white;
   position: absolute;
@@ -46,14 +46,14 @@ export const Image = styled.img`
 `;
 
 export const Icon = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: .625em;
   transition: all 0.5s ease;
 
   &:hover{

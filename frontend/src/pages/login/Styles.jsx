@@ -19,13 +19,13 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   width: 25%;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: white;
   ${mobile({ width: '75%' })}
 `;
 
 export const Title = styled.h1`
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
 `;
 
@@ -37,17 +37,17 @@ export const Form = styled.form`
 export const Input = styled.input`
   flex: 1;
   min-width: 40%;
-  margin: 10px 0;
-  padding: 10px;
+  margin: .625rem 0;
+  padding: .625rem;
 `;
 
 export const Button = styled.button`
   width: 40%;
   border: none;
-  padding: 15px 20px;
+  padding: 15px 1.25rem;
   background-color: teal;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
   cursor: pointer;
   
   &:disabled{
@@ -61,8 +61,8 @@ export const Error = styled.span`
 `;
 
 export const Link = styled.a`
-  margin: 5px 0px;
-  font-size: 12px;
+  margin: .3125rem 0px;
+  font-size: .75rem;
   text-decoration: underline;
   cursor: pointer;
 `;

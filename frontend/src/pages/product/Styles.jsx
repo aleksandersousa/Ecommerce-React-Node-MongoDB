@@ -4,9 +4,9 @@ import { mobile } from '../../responsive';
 export const Container = styled.div``;
 
 export const Wrapper = styled.div`
-  padding: 50px;
+  padding: 3.125rem;
   display: flex;
-  ${mobile({ padding: '10px', flexDirection: 'column' })}
+  ${mobile({ padding: '.625rem', flexDirection: 'column' })}
 `;
 
 export const ImageContainer = styled.div`
@@ -22,8 +22,8 @@ export const Image = styled.img`
 
 export const InfoContainer = styled.div`
   flex: 1;
-  padding: 0px 50px;
-  ${mobile({ padding: '10px' })}
+  padding: 0px 3.125rem;
+  ${mobile({ padding: '.625rem' })}
 `;
 
 export const Title = styled.h1`
@@ -31,17 +31,17 @@ export const Title = styled.h1`
 `;
 
 export const Desc = styled.p`
-  margin: 20px 0px;
+  margin: 1.25rem 0px;
 `;
 
 export const Price = styled.span`
   font-weight: 100;
-  font-size: 40px;
+  font-size: 2.5rem;
 `;
 
 export const FilterContainer = styled.div`
   width: 50%;
-  margin: 30px 0px;
+  margin: 1.875rem 0px;
   display: flex;
   justify-content: space-between;
   ${mobile({ width: '100%' })}
@@ -53,22 +53,22 @@ export const Filter = styled.div`
 `;
 
 export const FilterTitle = styled.span`
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 200;
 `;
 
 export const FilterColor = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
   background-color: ${(props) => props.color};
-  margin: 0px 5px;
+  margin: 0px .3125rem;
   cursor: pointer;
 `;
 
 export const FilterSize = styled.select`
-  margin-left: 10px;
-  padding: 5px;
+  margin-left: .625rem;
+  padding: .3125rem;
 `;
 
 export const FilterSizeOption = styled.option``;
@@ -88,18 +88,18 @@ export const AmountContainer = styled.div`
 `;
 
 export const Amount = styled.span`
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: .625rem;
   border: 1px solid teal;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 5px;
+  margin: 0px .3125rem;
 `;
 
 export const Button = styled.button`
-  padding: 15px;
+  padding: .9375rem;
   border: 2px solid teal;
   background-color: white;
   cursor: pointer;

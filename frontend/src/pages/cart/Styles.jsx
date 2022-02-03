@@ -4,8 +4,8 @@ import { mobile } from '../../responsive';
 export const Container = styled.div``;
 
 export const Wrapper = styled.div`
-  padding: 20px;
-  ${mobile({ padding: '10px' })}
+  padding: 1.25rem;
+  ${mobile({ padding: '.625rem' })}
 `;
 
 export const Title = styled.h1`
@@ -17,11 +17,11 @@ export const Top = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.25rem;
 `;
 
 export const TopButton = styled.button`
-  padding: 10px;
+  padding: .625rem;
   font-weight: 600;
   cursor: pointer;
   border: ${(props) => props.type === 'filled' && 'none'};
@@ -36,7 +36,7 @@ export const TopTexts = styled.div`
 export const TopText = styled.span`
   text-decoration: underline;
   cursor: pointer;
-  margin: 0px 10px;
+  margin: 0px .625rem;
 `;
 
 export const Bottom = styled.div`
@@ -61,11 +61,11 @@ export const ProductDetail = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 200px;
+  width: 12.5rem;
 `;
 
 export const Details = styled.div`
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -76,8 +76,8 @@ export const ProductName = styled.span``;
 export const ProductId = styled.span``;
 
 export const ProductColor = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
   background-color: ${(props) => props.color};
 `;
@@ -95,19 +95,19 @@ export const PriceDetail = styled.div`
 export const ProductAmountContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 `;
 
 export const ProductAmount = styled.div`
-  font-size: 24px;
-  margin: 5px;
-  ${mobile({ margin: '5px 15px' })}
+  font-size: 1.5rem;
+  margin: .3125rem;
+  ${mobile({ margin: '.3125rem .9375rem' })}
 `;
 
 export const ProductPrice = styled.div`
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 200;
-  ${mobile({ marginBottom: '20px' })}
+  ${mobile({ marginBottom: '1.25rem' })}
 `;
 
 export const Hr = styled.hr`
@@ -119,8 +119,8 @@ export const Hr = styled.hr`
 export const Summary = styled.div`
   flex: 1;
   border: 0.5px solid lightgray;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: .625rem;
+  padding: 1.25rem;
   height: 50vh;
 `;
 
@@ -129,11 +129,11 @@ export const SummaryTitle = styled.h1`
 `;
 
 export const SummaryItem = styled.div`
-  margin: 30px 0px;
+  margin: 1.875rem 0px;
   display: flex;
   justify-content: space-between;
   font-weight: ${(props) => props.type === 'total' && '500'};
-  font-size: ${(props) => props.type === 'total' && '24px'};
+  font-size: ${(props) => props.type === 'total' && '1.5rem'};
 `;
 
 export const SummaryItemText = styled.span``;
@@ -142,7 +142,7 @@ export const SummaryItemPrice = styled.span``;
 
 export const Button = styled.button`
   width: 100%;
-  padding: 10px;
+  padding: .625rem;
   background-color: black;
   color: white;
   font-weight: 600;

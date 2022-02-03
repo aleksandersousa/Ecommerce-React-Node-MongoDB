@@ -9,6 +9,6 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.div`
-  padding: 10;
-  margin-top: 20;
+  padding: .625rem;
+  margin-top: 1.25rem;
 `;

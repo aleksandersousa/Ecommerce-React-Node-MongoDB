@@ -3,7 +3,7 @@ import { mobile } from '../../responsive';
 
 export const Container = styled.div`
   flex: 1;
-  margin: 3px;
+  margin: .1875rem;
   height: 70vh;
   position: relative;
 `;
@@ -29,12 +29,12 @@ export const Info = styled.div`
 
 export const Title = styled.h1`
     color:white;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 `;
 
 export const Button = styled.button`
     border:none;
-    padding: 10px;
+    padding: .625rem;
     background-color: white;
     color:gray;
     cursor: pointer;

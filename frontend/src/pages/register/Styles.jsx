@@ -18,13 +18,13 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   width: 40%;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: white;
   ${mobile({ width: '75%' })}
 `;
 
 export const Title = styled.h1`
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
 `;
 
@@ -36,19 +36,19 @@ export const Form = styled.form`
 export const Input = styled.input`
   flex: 1;
   min-width: 40%;
-  margin: 20px 10px 0 0;
-  padding: 10px;
+  margin: 1.25rem .625rem 0 0;
+  padding: .625rem;
 `;
 
 export const Agreement = styled.span`
-  font-size: 12px;
-  margin: 20px 0;
+  font-size: .75rem;
+  margin: 1.25rem 0;
 `;
 
 export const Button = styled.button`
   width: 40%;
   border: none;
-  padding: 15px 20px;
+  padding: .9375rem 1.25rem;
   background-color: teal;
   color: white;
   cursor: pointer;

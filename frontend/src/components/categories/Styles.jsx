@@ -3,7 +3,7 @@ import { mobile } from '../../responsive';
 
 export const Container = styled.div`
   display: flex;
-  padding: 20px;
+  padding: 1.25rem;
   justify-content: space-between;
   ${mobile({ padding: '0px', flexDirection: 'column' })}
 `;
