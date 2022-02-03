@@ -1,7 +1,6 @@
 # E-commerce
 
-A simple ecommerce project for demonstration purposes developed with React, Redux, Node, MongoDB, Stripe for payments, JWT authetication and Firebase for image upload. There are two projects, one is an admin dashboard and the other
-is the ecommerce.
+A simple ecommerce project for demonstration purposes developed with React, Redux, Node, MongoDB, Stripe for payments, JWT authetication and Firebase for image upload. There are two projects, one is an admin dashboard and the other is the ecommerce.
 
 ## Functionalities of ecommerce
 
@@ -21,6 +20,8 @@ is the ecommerce.
 
 Using Node.js and MongoDB Cloud to create an RESTful API, and React.js to create two projects for UI with responsive design, then added Redux for state management and finalinaly used Firebase in admin dashboard for image upload. The admin dashboard is responsible for managing all the data that are stored on DB and the ecommerce are the main page for ordinary users.
 
+PS: in the admin dashboard there are pages that are using mock data. That's because this are just a demonstration project.
+
 ## Pictures
 
 ### admin dashboard
@@ -36,14 +37,14 @@ Using Node.js and MongoDB Cloud to create an RESTful API, and React.js to create
 
 ### ecommerce
 
-![Alt text](https://i.ibb.co/CBbJCzv/register.png "register page")
-![Alt text](https://i.ibb.co/YDFwT9k/login.png "login page")
-![Alt text](https://i.ibb.co/JrXKv5j/home-slide.png "home-slide page")
-![Alt text](https://i.ibb.co/5sk06J5/home-categories.png "home-categories page")
-![Alt text](https://i.ibb.co/5sk06J5/home-categories.png "home-categories page")
-![Alt text](https://i.ibb.co/vkVyqFH/home-products.png "home-products page")
-![Alt text](https://i.ibb.co/d6nkQf3/footer.png "footer")
-![Alt text](https://i.ibb.co/nBdf74h/product-List.png "products page")
-![Alt text](https://i.ibb.co/K008PPb/product.png "product page")
-![Alt text](https://i.ibb.co/RpMz8xx/stripe-1.png "stripe payment")
-![Alt text](https://i.ibb.co/41J8JV8/mobile-responsive.png "mobile responsive")
+![register page](https://i.ibb.co/CBbJCzv/register.png "register page")
+![login page](https://i.ibb.co/YDFwT9k/login.png "login page")
+![home-slide page](https://i.ibb.co/JrXKv5j/home-slide.png "home-slide page")
+![home-categories page](https://i.ibb.co/5sk06J5/home-categories.png "home-categories page")
+![home-categories page](https://i.ibb.co/5sk06J5/home-categories.png "home-categories page")
+![home-products page](https://i.ibb.co/vkVyqFH/home-products.png "home-products page")
+![footer](https://i.ibb.co/d6nkQf3/footer.png "footer")
+![products page](https://i.ibb.co/nBdf74h/product-List.png "products page")
+![product page](https://i.ibb.co/K008PPb/product.png "product page")
+![stripe payment](https://i.ibb.co/RpMz8xx/stripe-1.png "stripe payment")
+![mobile responsive](https://i.ibb.co/41J8JV8/mobile-responsive.png "mobile responsive")
